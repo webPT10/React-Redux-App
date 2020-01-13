@@ -1,21 +1,13 @@
 import React from 'react';
 import './App.css';
-import Title from './components/Title';
-
-import { connect } from 'react-redux';
+import DogComponent from './components/DogComponent';
 
 const App = () => {
   return (
     <>
-    <Title />
+    <DogComponent />
     </>
   );
 }
 
-const mapStateToProps = (state) => {
-  console.log(state)
-  return {
-    state
-  }
-}
-export default connect(mapStateToProps, {})(App);
+export default App;
